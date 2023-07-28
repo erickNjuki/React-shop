@@ -4,7 +4,7 @@ function Product({product: {title, price, description, category, image}}) {
   return (
 
     <div className="flex bg-white w-full mb-5">
-        <div style={{backgroundImage: `url(${image})`}}className="w-5/12"></div>
+        <div style={{backgroundImage: `url(${image})`}}className="w-5/12 bg-contain bg-no-repeat bg-center"></div>
       <div className="w-7/12 p-5" >
         <h1 className="md:text-2xl">{title.substr(0, 50)}</h1>
         <h3 className="text-gray-400">{category}</h3>
